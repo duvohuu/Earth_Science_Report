@@ -1,8 +1,6 @@
-\usepackage{vntex} % Tiếng Việt
 \usepackage{graphicx} % Chèn hình ảnh
 \usepackage{fancyhdr} % Gói hỗ trợ tạo header và footer fancy
 \usepackage{changepage} % Thay đổi lề
-
 % Chèn code
 \usepackage{listings} % Thêm gói listings để chèn code
 \usepackage{xcolor} % Màu cho code
@@ -26,10 +24,29 @@
     basicstyle=\ttfamily,
 }
 
+\lstset{
+  language=Python,
+  backgroundcolor=\color{white},   
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\color{blue}\bfseries,
+  stringstyle=\color{red},
+  commentstyle=\color{teal},
+  xleftmargin=0cm,
+  framexleftmargin=0cm,
+  numberstyle=\tiny\color{gray},
+  numbers=none,
+  stepnumber=1,
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{black},
+  showstringspaces=false,
+  tabsize=2
+}
+
 % Footnote and References
 \usepackage[style=numeric,backend=biber]{biblatex} % Sử dụng gói biblatex
 \usepackage{capt-of} %  Footnote trong caption
-\usepackage[perpage]{footmisc} % Đánh số lại chú thích mỗi trang
+\usepackage[bottom]{footmisc} % Chú thích ở dưới cùng trang và đánh số lại từ đầu mỗi trang
 
 % Thiết lập bảng
 \usepackage{array} % Gói hỗ trợ các bảng phức tạp
@@ -57,6 +74,9 @@
 % Thiết lập thêm tùy chọn cho dấu gạch đầu dòng
 \usepackage{enumitem}
 
+% Multicols 
+\usepackage{multicol}
+
 % Thiết lập khác
 \usepackage{tikz}
 \usepackage{color}
@@ -77,4 +97,3 @@
 \hypersetup{urlcolor=black,linkcolor=black,citecolor=black,colorlinks=true} % Màu cho các đường nét
 \everymath{\color{black}}
 \pagestyle{fancy}
-
