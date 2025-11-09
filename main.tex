@@ -1,0 +1,38 @@
+\documentclass[12pt,a4paper]{report}
+\input{library}
+\addbibresource{references.bib} 
+% \addbibresource{references.bib} 
+
+%Header
+\fancyhead{} % clear all header fields
+\fancyhead[L]{
+    \begin{tabular}{rl}
+        \begin{picture}(15, 15)(0,0)
+        \end{picture}&
+        \begin{tabular}{l}
+            \textbf{\bf \ttfamily Trường Đại Học Bách Khoa - ĐHQG TP.Hồ Chí Minh}\\
+            \textbf{\bf \ttfamily Khoa Cơ Khí}\\
+        \end{tabular} 	
+    \end{tabular}
+}
+\fancyhead[R]{
+	{\tiny \bf \quad} % Khoảng trắng nhỏ trong header bên phải
+}
+
+%Footer
+\fancyfoot{} % clear all footer fields
+\fancyfoot[L]{\scriptsize \ttfamily EARTH SCIENCE}
+\fancyfoot[R]{\scriptsize \ttfamily Pages {\thepage}/70}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0.3pt}
+
+\begin{document}
+    \include{titlepage}
+    \include{introduction}
+    \tableofcontents  
+    \listoftables
+    \listoffigures
+    \newpage
+    \normalsize
+    \include{chapter1}
+\end{document}

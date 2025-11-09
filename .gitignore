@@ -1,0 +1,9 @@
+build/
+!build/*.pdf
+.history/
+Code/**/pio/
+Code/**/.vscode/
+Code/**/.settings/
+Code/**/Debug/
+Code/**/.mxproject
+Code/**/*.launch
